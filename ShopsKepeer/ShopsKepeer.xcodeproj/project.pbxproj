@@ -3,27 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		CEB8F68623F3E1F000152C45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F68523F3E1F000152C45 /* AppDelegate.swift */; };
 		CEB8F68823F3E1F000152C45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F68723F3E1F000152C45 /* SceneDelegate.swift */; };
-		CEB8F68A23F3E1F000152C45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F68923F3E1F000152C45 /* ViewController.swift */; };
-		CEB8F68D23F3E1F000152C45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8F68B23F3E1F000152C45 /* Main.storyboard */; };
 		CEB8F68F23F3E1F000152C45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB8F68E23F3E1F000152C45 /* Assets.xcassets */; };
 		CEB8F69223F3E1F000152C45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8F69023F3E1F000152C45 /* LaunchScreen.storyboard */; };
+		CEB8F6A123F445B600152C45 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB8F6A023F445B600152C45 /* Authorization.storyboard */; };
+		CEB8F6A423F4466400152C45 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEB8F6A323F4466400152C45 /* Alamofire */; };
+		CEB8F6A823F4473800152C45 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F6A723F4473800152C45 /* Extension+String.swift */; };
+		CEB8F6AA23F4474D00152C45 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F6A923F4474D00152C45 /* Extension+UIView.swift */; };
+		CEB8F6AC23F4478500152C45 /* Extension+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F6AB23F4478500152C45 /* Extension+TextField.swift */; };
+		CEB8F6AE23F447CA00152C45 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB8F6AD23F447CA00152C45 /* AuthorizationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEB8F68223F3E1F000152C45 /* ShopsKepeer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopsKepeer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB8F68523F3E1F000152C45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB8F68723F3E1F000152C45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB8F68923F3E1F000152C45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEB8F68C23F3E1F000152C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB8F68E23F3E1F000152C45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB8F69123F3E1F000152C45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB8F69323F3E1F000152C45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEB8F6A023F445B600152C45 /* Authorization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		CEB8F6A723F4473800152C45 /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		CEB8F6A923F4474D00152C45 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		CEB8F6AB23F4478500152C45 /* Extension+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+TextField.swift"; sourceTree = "<group>"; };
+		CEB8F6AD23F447CA00152C45 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB8F6A423F4466400152C45 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,74 @@
 		CEB8F68423F3E1F000152C45 /* ShopsKepeer */ = {
 			isa = PBXGroup;
 			children = (
-				CEB8F68523F3E1F000152C45 /* AppDelegate.swift */,
-				CEB8F68723F3E1F000152C45 /* SceneDelegate.swift */,
-				CEB8F68923F3E1F000152C45 /* ViewController.swift */,
-				CEB8F68B23F3E1F000152C45 /* Main.storyboard */,
-				CEB8F68E23F3E1F000152C45 /* Assets.xcassets */,
-				CEB8F69023F3E1F000152C45 /* LaunchScreen.storyboard */,
+				CEB8F69C23F4456C00152C45 /* Application */,
+				CEB8F69B23F4455B00152C45 /* NetworkLayer */,
+				CEB8F69923F4453300152C45 /* Extension */,
+				CEB8F69A23F4454400152C45 /* AuthorizationModule */,
 				CEB8F69323F3E1F000152C45 /* Info.plist */,
 			);
 			path = ShopsKepeer;
+			sourceTree = "<group>";
+		};
+		CEB8F69923F4453300152C45 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8F6A723F4473800152C45 /* Extension+String.swift */,
+				CEB8F6A923F4474D00152C45 /* Extension+UIView.swift */,
+				CEB8F6AB23F4478500152C45 /* Extension+TextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CEB8F69A23F4454400152C45 /* AuthorizationModule */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8F69F23F4459C00152C45 /* Presenter */,
+				CEB8F69E23F4459400152C45 /* Model */,
+				CEB8F69D23F4458F00152C45 /* View */,
+			);
+			path = AuthorizationModule;
+			sourceTree = "<group>";
+		};
+		CEB8F69B23F4455B00152C45 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		CEB8F69C23F4456C00152C45 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8F68E23F3E1F000152C45 /* Assets.xcassets */,
+				CEB8F68523F3E1F000152C45 /* AppDelegate.swift */,
+				CEB8F69023F3E1F000152C45 /* LaunchScreen.storyboard */,
+				CEB8F68723F3E1F000152C45 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		CEB8F69D23F4458F00152C45 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEB8F6A023F445B600152C45 /* Authorization.storyboard */,
+				CEB8F6AD23F447CA00152C45 /* AuthorizationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEB8F69E23F4459400152C45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB8F69F23F4459C00152C45 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +150,9 @@
 			dependencies = (
 			);
 			name = ShopsKepeer;
+			packageProductDependencies = (
+				CEB8F6A323F4466400152C45 /* Alamofire */,
+			);
 			productName = ShopsKepeer;
 			productReference = CEB8F68223F3E1F000152C45 /* ShopsKepeer.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +181,9 @@
 				Base,
 			);
 			mainGroup = CEB8F67923F3E1F000152C45;
+			packageReferences = (
+				CEB8F6A223F4466400152C45 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = CEB8F68323F3E1F000152C45 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +198,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB8F6A123F445B600152C45 /* Authorization.storyboard in Resources */,
 				CEB8F69223F3E1F000152C45 /* LaunchScreen.storyboard in Resources */,
 				CEB8F68F23F3E1F000152C45 /* Assets.xcassets in Resources */,
-				CEB8F68D23F3E1F000152C45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +211,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB8F68A23F3E1F000152C45 /* ViewController.swift in Sources */,
+				CEB8F6AE23F447CA00152C45 /* AuthorizationViewController.swift in Sources */,
 				CEB8F68623F3E1F000152C45 /* AppDelegate.swift in Sources */,
+				CEB8F6AC23F4478500152C45 /* Extension+TextField.swift in Sources */,
 				CEB8F68823F3E1F000152C45 /* SceneDelegate.swift in Sources */,
+				CEB8F6AA23F4474D00152C45 /* Extension+UIView.swift in Sources */,
+				CEB8F6A823F4473800152C45 /* Extension+String.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CEB8F68B23F3E1F000152C45 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB8F68C23F3E1F000152C45 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEB8F69023F3E1F000152C45 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -338,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEB8F6A223F4466400152C45 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEB8F6A323F4466400152C45 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEB8F6A223F4466400152C45 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEB8F67A23F3E1F000152C45 /* Project object */;
 }

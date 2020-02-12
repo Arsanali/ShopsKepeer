@@ -9,22 +9,35 @@
 import UIKit
 
 class AuthorizationViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  
+  @IBOutlet var AuthImage: UIImageView!
+  
+  @IBOutlet var AuthoTextField: UITextField!
+  
+  @IBOutlet var AuthoButton: UIButton!
+  
+  override func viewDidLoad() {
+     super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    self.AuthoTextField.addBottomBorder()
+    self.AuthoButton.cornerRadious = 10
+  }
+  
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+      textField.resignFirstResponder()
+      return true
+  }
+  @IBAction func AuthoButtonAction(_ sender: UIButton) {
+    
+  }
+  
+  
+  // MARK: - Navigation
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // Get the new view controller using segue.destination.
+    // Pass the selected object to the new view controller.
+  }
+  
+  
 }
+       
